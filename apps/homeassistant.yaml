@@ -13,7 +13,7 @@ spec:
     helm:
       parameters:
       - name: ingress.main.enabled
-        value: true
+        value: "true"
           #      - name: 
           #        value: 
     repoURL: https://k8s-at-home.com/charts/
