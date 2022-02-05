@@ -4,10 +4,17 @@ metadata:
   name: app-of-apps
   namespace: argocd
 spec:
-  destination:
-    namespace: argocd
-    server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: git@github.com:nilsotto/argocd-apps.git
-    path: app-of-apps
+    repoURL: 'git@github.com:nilsotto/argocd-apps.git'
+    path: apps
+    targetRevision: HEAD
+    directory:
+      recurse: true
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: argocd
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+  
