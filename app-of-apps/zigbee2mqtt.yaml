@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: zigbee2mqtt
+  namespace: argocd
+spec:
+  destination:
+    namespace: homeassistant
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    chart: zigbee2mqtt
+    helm:
+      parameters:
+      - name: persistence.usb.hostPath
+        value: /dev/serial/by-id/usb-dresden_elektronik_ingenieurtechnik_GmbH_ConBee_II_DE2251312-if00
+      - name: persistence.usb.enabled
+        value: "true"
+      - name: securityContext.privileged
+        value: "true"
+      - name: persistence.data.enabled
+        value: "true"
+      - name: ingress.main.enabled
+        value: "true"
+    repoURL: https://k8s-at-home.com/charts/
+    targetRevision: 9.2.0
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
