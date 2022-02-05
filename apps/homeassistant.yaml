@@ -14,6 +14,10 @@ spec:
       parameters:
       - name: ingress.main.enabled
         value: "true"
+      - name: ingress.main.host
+        value: "hass.nojo.no"
+      - name: persistence.config.enabled
+        value: "true"
           #      - name: 
           #        value: 
     repoURL: https://k8s-at-home.com/charts/
