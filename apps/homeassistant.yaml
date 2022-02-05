@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: zigbee2mqtt
+  name: homeassistant
   namespace: argocd
 spec:
   destination:
@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    chart: zigbee2mqtt
+    chart: home-assistant
     helm:
       parameters:
       - name: ingress.main.enabled
@@ -17,7 +17,6 @@ spec:
           #      - name: 
           #        value: 
     repoURL: https://k8s-at-home.com/charts/
-    targetRevision: 9.2.0
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
