@@ -11,6 +11,3 @@ spec:
   source:
     repoURL: git@github.com:nilsotto/argocd-apps.git
     path: app-of-apps
-  syncPolicy:
-    syncOptions:
-    - CreateNamespace=true
