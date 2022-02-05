@@ -20,6 +20,8 @@ spec:
         value: "true"
       - name: persistence.data.enabled
         value: "true"
+      - name: persistence.data.accesMode
+        valur: ReadWriteOnce
       - name: ingress.main.enabled
         value: "true"
     repoURL: https://k8s-at-home.com/charts/
