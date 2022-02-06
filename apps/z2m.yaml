@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-of-apps
+  name: zigbee2mqtt
   namespace: argocd
 spec:
   project: default
@@ -9,8 +9,8 @@ spec:
     repoURL: 'git@github.com:nilsotto/argocd-apps.git'
     path: manifests/zigbee2mqtt
     targetRevision: HEAD
-    directory:
-      recurse: true
+    helm:
+      releaseName: zigbee2mqtt
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: zigbee2mqtt
