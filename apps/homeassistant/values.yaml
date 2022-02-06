@@ -1,0 +1,18 @@
+
+home-assistant:
+  ingress:
+    main:
+      enabled: true
+      host: hass.nojo.no
+      
+
+  service:
+    main:
+      ports:
+        http:
+          port: 8123
+  persistence:
+    config:
+      enabled: true
+      size: 5Gi
+
