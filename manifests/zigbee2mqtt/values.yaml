@@ -6,6 +6,7 @@ zigbee2mqtt:
       log_level: debug
     serial:
       port: /dev/ttyACM0
+      path: /dev/ttyACM0
       baudrate: 38400
   securityContext:
     privileged: true
