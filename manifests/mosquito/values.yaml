@@ -5,9 +5,3 @@ mosquitto:
       enabled: true
       accessMode: ReadWriteOnce
       size: 2Gi
-  service:
-   main:
-     ports:
-       http:
-         enabled: true
-         port: 8080
