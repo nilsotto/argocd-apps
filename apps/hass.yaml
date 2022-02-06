@@ -13,7 +13,7 @@ spec:
       releaseName: home-assistant
   destination:
     server: 'https://kubernetes.default.svc'
-
+    namespace: home-assistant
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
