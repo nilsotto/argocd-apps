@@ -5,3 +5,7 @@ zigbee2mqtt:
      enabled: true
      accessMode: ReadWriteOnce
      size: 5Gi
+   usb:
+     enabled: true
+     hostPath: /dev/serial/by-id/usb-dresden_elektronik_ingenieurtechnik_GmbH_ConBee_II_DE2251312-if00/
+     type: hostPath
