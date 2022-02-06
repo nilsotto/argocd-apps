@@ -2,18 +2,18 @@
 zigbee2mqtt:
   config:
     serial:
-    port: /dev/ttyACM0
-    adapter: deconz
+      port: /dev/ttyACM0
+      adapter: deconz
 
 
- securityContext:
-   privileged: true
- persistence:
-   data:
-     enabled: true
-     accessMode: ReadWriteOnce
-     size: 5Gi
-   usb:
-     enabled: true
-     hostPath: /dev/ttyACM0
-     type: hostPat
+  securityContext:
+    privileged: true
+  persistence:
+    data:
+      enabled: true
+      accessMode: ReadWriteOnce
+      size: 5Gi
+    usb:
+      enabled: true
+      hostPath: /dev/ttyACM0
+      type: hostPat
