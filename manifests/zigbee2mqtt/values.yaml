@@ -7,5 +7,5 @@ zigbee2mqtt:
      size: 5Gi
    usb:
      enabled: true
-     hostPath: /dev/serial/by-id/usb-dresden_elektronik_ingenieurtechnik_GmbH_ConBee_II_DE2251312-if00/
+     hostPath: /dev/ttyACM0
      type: hostPath
