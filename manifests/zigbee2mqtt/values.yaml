@@ -5,6 +5,7 @@ zigbee2mqtt:
     advanced:
       log_level: debug
     serial:
+      adapter: deconz
       port: /dev/ttyACM0
       path: /dev/ttyACM0
       baudrate: 38400
