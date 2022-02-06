@@ -9,9 +9,11 @@ spec:
     repoURL: 'git@github.com:nilsotto/argocd-apps.git'
     path: manifests/homeassistant
     targetRevision: HEAD
+    helm:
+      releaseName: home-assistant
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace:
+
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
