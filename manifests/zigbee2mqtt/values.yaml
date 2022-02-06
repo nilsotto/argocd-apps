@@ -1,5 +1,13 @@
 
 zigbee2mqtt:
+  config:
+    serial:
+    port: /dev/ttyACM0
+    adapter: deconz
+
+
+ securityContext:
+   privileged: true
  persistence:
    data:
      enabled: true
@@ -8,4 +16,4 @@ zigbee2mqtt:
    usb:
      enabled: true
      hostPath: /dev/ttyACM0
-     type: hostPath
+     type: hostPat
