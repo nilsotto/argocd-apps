@@ -3,9 +3,10 @@ zigbee2mqtt:
   frontend: true
   config:
     advanced:
+      log_output: /dev/stdout
       log_level: trace
     serial:
-
+      port: "tcp://ser2sock:10000"
     mqtt:
       server: mqtt://mosquito-mosquito.mosquito.svc:1883
   securityContext:
