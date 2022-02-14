@@ -5,7 +5,7 @@ zigbee2mqtt:
     advanced:
       log_level: trace
     serial:
-      port: tcp://ser2sock:10000
+
     mqtt:
       server: mqtt://mosquito-mosquito.mosquito.svc:1883
   securityContext:
@@ -16,6 +16,4 @@ zigbee2mqtt:
       accessMode: ReadWriteOnce
       size: 5Gi
     usb:
-      enabled: true
-      hostPath: /dev/ttyACM0
-      type: hostPath
+      enabled: false
