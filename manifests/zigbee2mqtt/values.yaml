@@ -5,10 +5,7 @@ zigbee2mqtt:
     advanced:
       log_level: trace
     serial:
-      adapter: deconz
-      port: /dev/ttyACM0
-      path: /dev/ttyACM0
-      baudrate: 38400
+      port: tcp://ser2sock:10000
     mqtt:
       server: mqtt://mosquito-mosquito.mosquito.svc:1883
   securityContext:
