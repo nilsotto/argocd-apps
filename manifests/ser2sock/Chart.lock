@@ -1,6 +1,6 @@
 dependencies:
-- name: zigbee2mqtt
+- name: ser2sock
   repository: https://k8s-at-home.com/charts/
-  version: 9.2.0
-digest: sha256:4c39e9171736a8f444e3b9935918466397f65dbd9e48a0f9908dc2427e50081d
-generated: "2022-02-06T14:25:18.672715937+01:00"
+  version: 2.0.3
+digest: sha256:4971f778eefb7c4e7801968416643a03a9fe9244a4597f987a7a4ce118ed2be0
+generated: "2022-02-14T20:10:49.022127631+01:00"
