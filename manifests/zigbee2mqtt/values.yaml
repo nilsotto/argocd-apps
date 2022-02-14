@@ -3,12 +3,14 @@ zigbee2mqtt:
   frontend: true
   config:
     advanced:
-      log_level: debug
+      log_level: trace
     serial:
       adapter: deconz
       port: /dev/ttyACM0
       path: /dev/ttyACM0
       baudrate: 38400
+    mqtt:
+      server: mqtt://mosquito-mosquito.mosquito.svc:1883
   securityContext:
     privileged: true
   persistence:
