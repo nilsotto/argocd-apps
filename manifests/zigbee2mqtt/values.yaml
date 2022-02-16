@@ -20,5 +20,5 @@ zigbee2mqtt:
     usb:
       enabled: true
       type: hostPath
-      hostPath: /dev/ttyACM0
+      hostPath: /dev/ttyACM1
       
