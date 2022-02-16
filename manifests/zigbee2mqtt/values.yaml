@@ -18,4 +18,7 @@ zigbee2mqtt:
       accessMode: ReadWriteOnce
       size: 5Gi
     usb:
-      enabled: false
+      enabled: true
+      type: hostPath
+      hostPath: /dev/ttyACM0
+      
