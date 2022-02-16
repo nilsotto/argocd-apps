@@ -7,6 +7,7 @@ zigbee2mqtt:
       log_level: trace
     serial:
       port: "tcp://ser2sock:10000"
+      path: "tcp://ser2sock:10000"
     mqtt:
       server: mqtt://mosquito-mosquito.mosquito.svc:1883
   securityContext:
